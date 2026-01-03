@@ -14,5 +14,13 @@
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "postcss-import": "^16.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnsonmkevin/autoMainLandingPage.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johnsonmkevin/autoMainLandingPage/issues"
+  },
+  "homepage": "https://github.com/johnsonmkevin/autoMainLandingPage#readme"
 }

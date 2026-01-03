@@ -41,7 +41,7 @@
       crossorigin />
     <link
       rel="stylesheet"
-      href="style.css" />
+      href="public/style.css" />
     <title>Autograf</title>
     <link
       rel="stylesheet"
@@ -49,16 +49,47 @@
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer" />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
   </head>
-  <body>
-    <h1>Logo Girl Demo</h1>
-    <img
-      src="public/images/logoGirl.png"
-      alt="Logo Girl"
-      style="max-width: 300px; display: block; margin: 2rem auto" />
-    <img
-      src="public/images/logoGirl3.png"
-      alt="Logo Girl"
-      style="max-width: 300px; display: block; margin: 2rem auto" />
+  <!--  <img
+    src="public/images/logoGirl3.png"
+    alt="Logo Girl"
+    style="max-width: 300px; display: block; margin: 2rem auto" /> -->
+  <body class="container">
+    <header class="header">
+      <nav class="navigation">
+        <div class="logo">
+          <img
+            src="public/images/logo.png"
+            alt="autograf-logo"
+            class="logo" />
+        </div>
+        <ul class="nav-links">
+          <li class="nav-link"><a href="#">Our Vehicles</a></li>
+          <li class="nav-link"><a href="#">About us</a></li>
+          <li class="nav-link"><a href="#">Choose us</a></li>
+          <li class="nav-link"><a href="#">Service</a></li>
+          <li class="nav-link"><a href="#">Cars</a></li>
+          <li class="nav-link"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">Hero</section>
+    <section class="about">About us</section>
+    <section class="choose">Why choose us</section>
+    <section class="cars">Cars</section>
+    <section class="contact">Contact</section>
+
+    <footer class="footer">Footer</footer>
   </body>
 </html>
