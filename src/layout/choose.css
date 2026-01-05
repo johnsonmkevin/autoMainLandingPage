@@ -1,3 +1,39 @@
 .choose {
   grid-row: 4;
+  grid-column: 2 / 14;
+}
+
+.choose-title {
+  text-align: center;
+  font-size: 3.7rem;
+  font-weight: 300;
+  & .choose-secondary {
+    color: var(--primary-color);
+  }
+}
+
+.choose-subTitle {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.choose-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+}
+
+.verified,
+.parts,
+.trust {
+  border-radius: 2rem;
+  text-align: center;
+  padding: 2rem 3rem;
+  border: 2px solid var(--primary-color);
+  & svg {
+    height: 3rem;
+    width: 3rem;
+    display: inline-block;
+    align-items: center;
+  }
 }
