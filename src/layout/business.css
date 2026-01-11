@@ -1,0 +1,50 @@
+.business {
+  display: grid;
+  grid-column: 12 / -1;
+  justify-content: center;
+  align-content: center;
+  grid-row-gap: 2rem;
+  justify-items: center;
+  padding: 3rem;
+  color: white;
+  background-color: black;
+}
+
+.business-image {
+  width: 7rem;
+  max-width: none;
+  border-radius: 50%;
+}
+
+.business-list {
+  display: grid;
+  align-items: center;
+  text-align: center;
+  gap: 6rem;
+}
+
+@media only screen and (max-width: 50em) {
+  .business-list {
+    gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .business-list {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 2rem;
+  }
+}
+
+.business-svg {
+  height: 1rem;
+  width: 1rem;
+  display: inline-flex;
+}
+
+.svg-container {
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
+}

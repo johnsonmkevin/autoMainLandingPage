@@ -1,3 +1,89 @@
 .cars {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(4rem, 1fr)
+    [center-start] repeat(12, [col-start] minmax(min-content, 10rem) [col-end])
+    [center-end] minmax(4rem, 1fr)
+    [full-end];
   grid-row: 5;
+  grid-column: 1/ -1;
+  background-color: black;
+  color: white;
+  padding: 8rem 0rem;
+  & a {
+    color: white;
+  }
+}
+
+.cars-header {
+  grid-row: 1;
+  grid-column: 2/-1;
+}
+.cars-wrapper {
+  display: grid;
+  grid-row: 2;
+  grid-column: 2/14;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem;
+  color: white;
+}
+
+.cars-title {
+  font-size: 3.7rem;
+  font-weight: 300;
+  margin-bottom: 0.3em;
+  & .cars-secondary {
+    color: var(--primary-color);
+  }
+}
+.car {
+  display: grid;
+  grid-template-rows: auto minmax(6rem, min-content) 4rem;
+  box-shadow: 0px 5px 20px 5px #fff;
+  & img {
+    grid-row: 1;
+  }
+}
+
+.car-name {
+  font-size: 1.2rem;
+  margin-left: 0.4em;
+  margin-top: 0.6em;
+}
+
+.car-svg {
+  height: 1.3rem;
+  width: 1.3rem;
+  align-self: center;
+  margin: 0em 0.4em 0 0.4em;
+}
+
+.car-location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blocket-link {
+  font-size: 1rem;
+  background-color: var(--primary-color);
+  margin-right: 0.6em;
+  border-radius: 10em;
+  color: #fff;
+  display: inline-block;
+  font-weight: 500;
+  padding: 0.2em 1.4em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.blocket-link:hover {
+  background-color: #e04a35;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 88, 65, 0.4);
+}
+
+.blocket-link:active {
+  transform: translateY(0);
 }

@@ -1,15 +1,17 @@
 .hero {
   display: grid;
-  grid-row: 2;
+  min-height: 100vh;
+  grid-row: 1;
   grid-column: 1/ -1;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../public/images/HeroCarImageUpscale.png);
   background-position: center top;
   background-size: cover;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: min-content 1fr minmax(6rem, min-content) 14rem;
   color: #fff;
-  & > * {
-    padding-left: 2rem;
+  padding: 4rem;
+  & img {
+    justify-self: center;
   }
 }
 
@@ -17,7 +19,7 @@
   font-family: "Oswald", sans-serif;
   font-size: 6rem;
   font-weight: 400;
-  align-self: end;
+  align-self: center;
   justify-self: center;
   text-align: center;
 }
@@ -28,11 +30,4 @@
   text-align: center;
   align-self: center;
   letter-spacing: 0.05em;
-}
-
-.nav-links {
-  a {
-    color: #fff;
-    font-size: 1.3rem;
-  }
 }

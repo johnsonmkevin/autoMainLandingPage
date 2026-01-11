@@ -1,15 +1,27 @@
 .about {
   display: grid;
+  grid-template-columns:
+    [full-start] minmax(4rem, 1fr)
+    [center-start] repeat(12, [col-start] minmax(min-content, 10rem) [col-end])
+    [center-end] minmax(4rem, 1fr)
+    [full-end];
   grid-row: 3;
-  grid-column: 2 / 14;
-  column-gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 4rem;
+  grid-column: 1/ -1;
+  background-color: black;
+  padding: 8rem 0rem;
 }
 
-.viewHeight {
-  min-height: 50vh !important;
+.about-container {
+  display: grid;
+  grid-column: 2/14;
+  column-gap: 2rem;
+  color: white;
+  grid-template-columns: repeat(2, 1fr);
 }
+
+/* .viewHeight {
+  min-height: 50vh !important;
+} */
 
 .about-title {
   font-size: 3.7rem;
@@ -29,5 +41,5 @@
 }
 
 .about-text {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }

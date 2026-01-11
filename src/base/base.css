@@ -11,7 +11,3 @@
     [center-end] minmax(4rem, 1fr)
     [full-end];
 }
-
-section {
-  min-height: 100vh;
-}
