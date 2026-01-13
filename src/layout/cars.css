@@ -18,6 +18,7 @@
 .cars-header {
   grid-row: 1;
   grid-column: 2/-1;
+  margin-bottom: 2rem;
 }
 .cars-wrapper {
   display: grid;
@@ -29,12 +30,7 @@
 }
 
 .cars-title {
-  font-size: 3.7rem;
-  font-weight: 300;
   margin-bottom: 0.3em;
-  & .cars-secondary {
-    color: var(--primary-color);
-  }
 }
 .car {
   display: grid;

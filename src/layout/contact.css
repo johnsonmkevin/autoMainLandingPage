@@ -1,3 +1,20 @@
 .contact {
   grid-row: 6;
+  background-color: black;
+  color: #fff;
+}
+
+.contact-header {
+  grid-row: 1;
+  grid-column: 6/ 12;
+}
+
+.contact-form {
+  grid-row: 2;
+}
+
+.form {
+  & input {
+    grid-row: 1/ -1;
+  }
 }
