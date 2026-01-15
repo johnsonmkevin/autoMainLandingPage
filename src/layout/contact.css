@@ -1,20 +1,50 @@
 .contact {
-  grid-row: 6;
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(4rem, 1fr)
+    [center-start] repeat(12, [col-start] minmax(min-content, 10rem) [col-end])
+    [center-end] minmax(4rem, 1fr)
+    [full-end];
+  grid-column: 1/ -1;
   background-color: black;
-  color: #fff;
+  padding: 4rem 0rem;
+  grid-row: 5;
+  color: white;
+  text-align: center;
+  row-gap: 2rem;
+
+  & img {
+    border-radius: 50%;
+    height: 14rem;
+    border: solid var(--primary-color) 0.09em;
+  }
+  & h5 {
+    font-size: 2rem;
+  }
 }
 
 .contact-header {
   grid-row: 1;
-  grid-column: 6/ 12;
+  grid-column: 6/ 10;
 }
 
-.contact-form {
+.anders-header {
   grid-row: 2;
+  grid-column: 4/6;
+}
+.form-image1 {
+  grid-row: 3;
+  grid-column: 4/6;
+  justify-self: center;
 }
 
-.form {
-  & input {
-    grid-row: 1/ -1;
-  }
+.bjorn-header {
+  grid-row: 2;
+  grid-column: 10/12;
+}
+
+.form-image2 {
+  justify-self: center;
+  grid-row: 3;
+  grid-column: 10/12;
 }

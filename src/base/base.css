@@ -3,7 +3,7 @@
   --primary-black: #000;
 }
 
-.grid {
+.container {
   display: grid;
   grid-template-columns:
     [full-start] minmax(4rem, 1fr)
