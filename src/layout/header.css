@@ -4,22 +4,23 @@
   position: relative;
 }
 
-.navigation {
+.navigation-container {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
 }
 
-.nav-links {
+.navigation-items {
   display: flex;
   justify-content: space-around;
-  padding-top: 1rem;
-  & a {
-    color: #fff;
-    font-size: 1.1rem;
-    font-weight: 300;
-  }
+  padding-top: 4rem;
+}
+
+.navigation-link {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
 }
 
 .logo-girl {

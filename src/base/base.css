@@ -3,6 +3,12 @@
   --primary-black: #000;
 }
 
+/*  --breakpoint-small: 18em;
+  --breakpoint-medium: 48em;
+  --breakpoint-large: 64em;
+  --breakpoint-xlarge: 75em;
+  --breakpoint-xxlarge: 118em; */
+
 .container {
   display: grid;
   grid-template-columns:
@@ -13,7 +19,7 @@
 }
 
 .section-header {
-  font-size: 3.7rem;
+  font-size: 6.5rem;
   font-weight: 300;
 }
 

@@ -20,11 +20,11 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
-@media only screen and (max-width: 50em) {
+/* @media only screen and (max-width: 90em) {
   html {
     font-size: 50%;
   }
-}
+} */
 
 input,
 button,
@@ -57,11 +57,6 @@ button {
 ul,
 li {
   list-style: none;
-}
-
-html {
-  -webkit-text-size-adjust: 100%;
-  font-size: 100%;
 }
 
 html:focus-within {

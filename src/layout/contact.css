@@ -15,7 +15,11 @@
 
   & img {
     border-radius: 50%;
-    height: 14rem;
+    /* overrides the css reset on max-width */
+    width: 14rem !important;
+    height: 14rem !important;
+    max-width: none;
+    object-fit: cover;
     border: solid var(--primary-color) 0.09em;
   }
   & h5 {
@@ -25,17 +29,12 @@
 
 .contact-header {
   grid-row: 1;
-  grid-column: 6/ 10;
+  grid-column: 1/ -1;
 }
 
 .anders-header {
   grid-row: 2;
   grid-column: 4/6;
-}
-.form-image1 {
-  grid-row: 3;
-  grid-column: 4/6;
-  justify-self: center;
 }
 
 .bjorn-header {
@@ -47,4 +46,10 @@
   justify-self: center;
   grid-row: 3;
   grid-column: 10/12;
+}
+
+.form-image1 {
+  grid-row: 3;
+  grid-column: 4/6;
+  justify-self: center;
 }
